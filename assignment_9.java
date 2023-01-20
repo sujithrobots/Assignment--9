@@ -22,9 +22,9 @@ public class assignment_9 {
 				driver.get("https://ineuron-courses.vercel.app/signup");
 				driver.manage().window().maximize();
 				
-				//WebElement signupbtn = driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div/form/div/button"));
-				//assert signupbtn.getAttribute("disabled")=="true";
-				//System.out.println();
+				WebElement signupbtn = driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div/form/div/button"));
+				assert signupbtn.getAttribute("disabled")=="true";
+				System.out.println();
 				
 				Thread.sleep(1000);
 				
@@ -45,9 +45,9 @@ public class assignment_9 {
 				driver.findElement(By.xpath("//input[@id=\"6393ff23ec2ded7360ff7be0\"]")).click();
 				Thread.sleep(1000);
 				driver.findElement(By.xpath("//input[@value=\"Male\"]")).click();
-				//assert signupbtn.getAttribute("disabled")=="false";
+				assert signupbtn.getAttribute("disabled")=="false";
 				
-				//driver.findElement(By.xpath("//button[@class=\"submit-btn\"]")).submit();		
+				driver.findElement(By.xpath("//button[@class=\"submit-btn\"]")).submit();		
 				
 				
 			}
